@@ -1,0 +1,32 @@
+name: Build and Publish Docker Image
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '9.0'
+
+      - name: Restore and Build
+        run: |
+          dotnet restore
+          echo '_____________________________'
+          dotnet build
+
+      - name: Log in to DockerHub
+        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+
+      - name: Build and Push Docker Image
+        run: |
+          docker build -t malle98x/personnummer-app:latest .
+          docker push malle98x/personnummer-app:latest
