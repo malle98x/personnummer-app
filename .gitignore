@@ -1,4 +1,8 @@
 /bin
 /obj
-.DS_Store
+.vs/
+*.suo
+*.vscode
 *.user
+*.cache
+*.csproj.user

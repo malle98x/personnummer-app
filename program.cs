@@ -1,4 +1,6 @@
 while (true)
+
+    Console.WriteLine("Tjena!\nVälkommen till kontroll av svenska personnummer");
 {
     // Ändra textfärgen till turkos
     Console.ForegroundColor = ConsoleColor.Cyan;
