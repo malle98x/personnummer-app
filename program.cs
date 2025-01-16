@@ -1,7 +1,7 @@
 while (true)
-
+{   
     Console.WriteLine("Tjena!\nVälkommen till kontroll av svenska personnummer");
-{
+
     // Ändra textfärgen till turkos
     Console.ForegroundColor = ConsoleColor.Cyan;
     Console.WriteLine("Ange ditt personnummer 10 eller 12 siffror");
