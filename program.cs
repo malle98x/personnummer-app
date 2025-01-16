@@ -1,5 +1,7 @@
 while (true)
 {
+    // Ändra textfärgen till turkos
+    Console.ForegroundColor = ConsoleColor.Cyan;
     Console.WriteLine("Ange ditt personnummer 10 eller 12 siffror");
     string pnr = Console.ReadLine();
 
