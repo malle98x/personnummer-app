@@ -1,4 +1,4 @@
-# personnummer-applikation
+# Personnummer-applikation
 
 Grupp 4: Sebri, Malek, Sanjar och Helen
 
@@ -19,4 +19,23 @@ Kontrollsiffran (den sista siffran) valideras med Luhn-algoritmen. Den beräknar
 
 Den näst sista siffran visar kön: udda för man och jämn för kvinna. Detta kontrolleras med modulusoperatorn (%).
 
-Vi har genom att bygga en Docker-image startat en container. Applikationen kan köras i containern med kommando lokalt eller i webbläsaren.   
+# Docker-container
+
+Vi har genom att bygga en Docker laddadat upp vår Docker-container till Docker Hub. Applikationen kan köras i containern med kommando lokalt från källkod eller i webbläsaren. Vi skapade en lösning som är både skalbar och användarvänlig.  
+
+Användaren kan köra vår applikation med följande kommando:
+docker run -it malle98x/personnummer-app:latest
+
+Detta möjliggör interaktiv input av personnummer direkt i terminalen.
+
+Felhantering
+Vi säkerställde att applikationen ger tydliga felmeddelanden om något går fel, som ogiltiga personnummer eller saknad -it-flagga.
+
+För att köra den lokalt kan användaren klona repot https://github.com/malle98x/personnummer-app.git .Navigera till projektmappen. Köra kommando för att starta applikationen:
+dotnet run --project personnummer-applikation-test.csproj
+
+
+
+
+
+
