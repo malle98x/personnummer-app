@@ -35,7 +35,23 @@ För att köra den lokalt kan användaren klona repot https://github.com/malle98
 dotnet run --project personnummer-applikation-test.csproj
 
 
+# Köra applikationen lokalt
 
+Förutsättningar
+NET SDK måste vara installerat (version 9.0 eller senare). Ladda ner och installera .NET SDK här: https://dotnet.microsoft.com/download
 
+Git måste vara installerat.
+
+Steg för steg för att köra applikationen lokalt från källkoden:
+
+Klona GitHub-repot:
+Öppna terminalen och kör,
+git clone https://github.com/malle98x/personnummer-app.git
+
+Navigera till projektmappen på din dator:
+
+Kör applikationen:
+Kör följande kommando för att starta applikationen,
+dotnet run --project personnummer-applikation-test.csproj
 
 
